@@ -1,1 +1,3 @@
-# Book-Reading-Event
+# Book Reading Event
+
+Written in C#
