@@ -4,3 +4,6 @@ D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\obj\Debug\Book 
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\obj\Debug\Book Reading Event BL.csproj.CoreCompileInputs.cache
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\obj\Debug\Book Reading Event BL.dll
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\obj\Debug\Book Reading Event BL.pdb
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\bin\Debug\Book Reading Event DAO.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\bin\Debug\Book Reading Event DAO.pdb
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\obj\Debug\Book Reading Event BL.csproj.CopyComplete

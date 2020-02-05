@@ -67,3 +67,7 @@ D:\Learning\Projects\C#\Book Reading Event\Book Reading UI\Book Reading UI\obj\D
 D:\Learning\Projects\C#\Book Reading Event\Book Reading UI\Book Reading UI\obj\Debug\Book Reading UI.csproj.CopyComplete
 D:\Learning\Projects\C#\Book Reading Event\Book Reading UI\Book Reading UI\obj\Debug\Book Reading UI.dll
 D:\Learning\Projects\C#\Book Reading Event\Book Reading UI\Book Reading UI\obj\Debug\Book Reading UI.pdb
+D:\Learning\Projects\C#\Book Reading Event\Book Reading UI\Book Reading UI\bin\Book Reading Event BL.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading UI\Book Reading UI\bin\Book Reading Event DAO.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading UI\Book Reading UI\bin\Book Reading Event BL.pdb
+D:\Learning\Projects\C#\Book Reading Event\Book Reading UI\Book Reading UI\bin\Book Reading Event DAO.pdb

@@ -43,5 +43,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Book Reading Event DAO\Book Reading Event DAO.csproj">
+      <Project>{57e62833-ca5d-46cb-ae6e-1b96e6ac589d}</Project>
+      <Name>Book Reading Event DAO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

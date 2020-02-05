@@ -113,6 +113,16 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Book Reading Event BL\Book Reading Event BL.csproj">
+      <Project>{5ab0234a-c987-41bb-a2de-1cbe587ea78b}</Project>
+      <Name>Book Reading Event BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Book Reading Event DAO\Book Reading Event DAO.csproj">
+      <Project>{57e62833-ca5d-46cb-ae6e-1b96e6ac589d}</Project>
+      <Name>Book Reading Event DAO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
