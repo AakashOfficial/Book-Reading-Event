@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.960
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book Reading UI", "Book Reading UI\Book Reading UI.csproj", "{4F30CFC0-FC51-4FDF-8E54-9AEC9D0C6D38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book Reading Event DAO", "..\Book Reading Event DAO\Book Reading Event DAO.csproj", "{57E62833-CA5D-46CB-AE6E-1B96E6AC589D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book Reading Event BL", "..\Book Reading Event BL\Book Reading Event BL.csproj", "{5AB0234A-C987-41BB-A2DE-1CBE587EA78B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{4F30CFC0-FC51-4FDF-8E54-9AEC9D0C6D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F30CFC0-FC51-4FDF-8E54-9AEC9D0C6D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F30CFC0-FC51-4FDF-8E54-9AEC9D0C6D38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57E62833-CA5D-46CB-AE6E-1B96E6AC589D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E62833-CA5D-46CB-AE6E-1B96E6AC589D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E62833-CA5D-46CB-AE6E-1B96E6AC589D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E62833-CA5D-46CB-AE6E-1B96E6AC589D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB0234A-C987-41BB-A2DE-1CBE587EA78B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB0234A-C987-41BB-A2DE-1CBE587EA78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB0234A-C987-41BB-A2DE-1CBE587EA78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB0234A-C987-41BB-A2DE-1CBE587EA78B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
