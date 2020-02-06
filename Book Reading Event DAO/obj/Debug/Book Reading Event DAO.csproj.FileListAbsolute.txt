@@ -1,6 +1,5 @@
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\bin\Debug\Book Reading Event DAO.dll
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\bin\Debug\Book Reading Event DAO.pdb
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\obj\Debug\Book Reading Event DAO.csprojAssemblyReference.cache
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\obj\Debug\Book Reading Event DAO.csproj.CoreCompileInputs.cache
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\obj\Debug\Book Reading Event DAO.dll
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\obj\Debug\Book Reading Event DAO.pdb
