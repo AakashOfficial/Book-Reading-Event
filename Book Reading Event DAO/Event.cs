@@ -37,5 +37,8 @@ namespace Book_Reading_Event_DAO
         public int UserId { get; set; }
         public User User { get; set; }
 
+        public virtual IList<Comment> Comments { get; set; }
+
+        public virtual IList<Invitation> Invitation { get; set; }
     }
 }
