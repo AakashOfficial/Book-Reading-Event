@@ -32,5 +32,7 @@ namespace Book_Reading_Event_DAO
 
         public string EventStartTime { get; set; }
 
+        public int EventActive { get; set; }
+
     }
 }
