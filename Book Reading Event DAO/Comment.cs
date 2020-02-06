@@ -14,5 +14,11 @@ namespace Book_Reading_Event_DAO
 
         [Required]
         public string UserComment { get; set; }
+
+        public int UserId { get; set; }
+        public User User { get; set; }
+
+        public int EventId { get; set; }
+        public Event Event { get; set; }
     }
 }
