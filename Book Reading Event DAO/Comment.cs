@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Book_Reading_Event_DAO
 {
-    class Comment
+    public class Comment
     {
         [Key]
         public int Id { get; set; }
