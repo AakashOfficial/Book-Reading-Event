@@ -20,5 +20,9 @@ namespace Book_Reading_Event_DAO
 
         [Required]
         public string UserPassword { get; set; }
+
+        public IList<Comment> Comments { get; set; }
+
+        public IList<Event> Events { get; set; }
     }
 }
