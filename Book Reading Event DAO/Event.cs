@@ -23,22 +23,23 @@ namespace Book_Reading_Event_DAO
         public string EventLocation { get; set; }
 
         [Required]
-        public string EventDuration { get; set; }
+        public int EventDuration { get; set; }
 
         [Required]
         public int EventType { get; set; }
 
-        public string EventDate { get; set; }
+        public DateTime EventDate { get; set; }
 
         public string EventStartTime { get; set; }
 
         public int EventActive { get; set; }
 
         public int UserId { get; set; }
-        public User User { get; set; }
 
-        public virtual IList<Comment> Comments { get; set; }
 
+
+        public virtual User User { get; set; }
+        // public virtual IList<Comment> Comments { get; set; }
         public virtual IList<Invitation> Invitation { get; set; }
     }
 }
