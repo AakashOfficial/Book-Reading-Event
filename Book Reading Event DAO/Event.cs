@@ -34,5 +34,8 @@ namespace Book_Reading_Event_DAO
 
         public int EventActive { get; set; }
 
+        public int UserId { get; set; }
+        public User User { get; set; }
+
     }
 }
