@@ -18,6 +18,7 @@ namespace Book_Reading_UI.Areas.User.Controllers
         [HttpPost]
         public ActionResult Create(Event events){
 
+            
             return View();
         }
     }
