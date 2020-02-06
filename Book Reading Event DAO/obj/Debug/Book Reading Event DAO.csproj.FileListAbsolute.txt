@@ -9,3 +9,6 @@ D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\bin\Debug\Enti
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\bin\Debug\EntityFramework.xml
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\bin\Debug\EntityFramework.SqlServer.xml
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\obj\Debug\Book Reading Event DAO.csproj.CopyComplete
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\obj\Debug\Book_Reading_Event_DAO.Migrations.aakash.resources
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\obj\Debug\Book Reading Event DAO.csproj.GenerateResource.cache
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\obj\Debug\Book_Reading_Event_DAO.Migrations.final.resources

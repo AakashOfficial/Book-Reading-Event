@@ -55,12 +55,29 @@
     <Compile Include="Comment.cs" />
     <Compile Include="Event.cs" />
     <Compile Include="Invitation.cs" />
+    <Compile Include="Migrations\202002061042257_aakash.cs" />
+    <Compile Include="Migrations\202002061042257_aakash.designer.cs">
+      <DependentUpon>202002061042257_aakash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002061054328_final.cs" />
+    <Compile Include="Migrations\202002061054328_final.designer.cs">
+      <DependentUpon>202002061054328_final.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202002061042257_aakash.resx">
+      <DependentUpon>202002061042257_aakash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002061054328_final.resx">
+      <DependentUpon>202002061054328_final.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

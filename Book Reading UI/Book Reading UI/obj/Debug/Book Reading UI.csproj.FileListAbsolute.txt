@@ -74,3 +74,4 @@ D:\Learning\Projects\C#\Book Reading Event\Book Reading UI\Book Reading UI\bin\B
 D:\Learning\Projects\C#\Book Reading Event\Book Reading UI\Book Reading UI\bin\EntityFramework.dll
 D:\Learning\Projects\C#\Book Reading Event\Book Reading UI\Book Reading UI\bin\Book Reading Event DAO.dll.config
 D:\Learning\Projects\C#\Book Reading Event\Book Reading UI\Book Reading UI\bin\EntityFramework.xml
+D:\Learning\Projects\C#\Book Reading Event\Book Reading UI\Book Reading UI\bin\Book Reading Event BL.dll.config
