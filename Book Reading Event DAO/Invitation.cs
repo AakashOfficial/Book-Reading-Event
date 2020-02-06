@@ -15,5 +15,11 @@ namespace Book_Reading_Event_DAO
         [Required]
         public int InvitationActive { get; set; }
 
+        public int EventId { get; set; }
+        public Event Event { get; set; }
+
+        public int UserId { get; set; }
+        public User User { get; set; }
+
     }
 }
