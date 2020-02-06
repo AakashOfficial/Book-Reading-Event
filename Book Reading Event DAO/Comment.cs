@@ -16,9 +16,11 @@ namespace Book_Reading_Event_DAO
         public string UserComment { get; set; }
 
         public int UserId { get; set; }
-        public virtual User User { get; set; }
-
         public int EventId { get; set; }
-        public virtual Event Event { get; set; }
+
+
+        // public virtual User User { get; set; }
+
+        // public virtual Event Event { get; set; }
     }
 }
