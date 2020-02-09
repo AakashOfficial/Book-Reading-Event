@@ -12,3 +12,4 @@ D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\obj\Debug\Book
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\obj\Debug\Book_Reading_Event_DAO.Migrations.aakash.resources
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\obj\Debug\Book Reading Event DAO.csproj.GenerateResource.cache
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\obj\Debug\Book_Reading_Event_DAO.Migrations.final.resources
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\obj\Debug\Book Reading Event DAO.csprojAssemblyReference.cache
