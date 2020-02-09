@@ -57,13 +57,21 @@ namespace Book_Reading_Event_BL {
         }
 
         // Functio TO Get Event Detail By Event Id
-        public Event getEventDetails(int id)
-        {
+        public Event getEventDetails(int id) {
             var output = db.events.Single(x => x.EventId == id);
             return output;
         }
 
-        
+        // Function To Remove Event
+        public bool deleteEvent(int id) {
+            var output = db.events.Single(x => x.EventId == id);
+            if (output == null) {
+                return false;
+            }
 
+            db.events.Remove(output);
+            db.SaveChanges();
+            return true;
+        }
     }
 }
