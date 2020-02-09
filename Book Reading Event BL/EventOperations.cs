@@ -36,6 +36,14 @@ namespace Book_Reading_Event_BL {
             // ModelState.Clear();
             return true;
         }
+        
+        // Function TO List All the Evevt Created By User
+        public List<Event> getEvents() {
+            var output = db.events.ToList();
+            return output;
+        }
+
+
 
     }
 }
