@@ -17,10 +17,25 @@ namespace Book_Reading_Event_BL
         }
 
         public Boolean addEvents(Event ev) {
+            if (ev == null) {
+                return false;
+            }
 
+            if (ev.EventDate == null || ev.EventDescription == null || ev.EventLocation == null ||
+                ev.EventName == null || ev.EventOtherDetails == null || ev.EventStartTime == null ) {
+                return false;
+            }
+
+            // Console.WriteLine(ev.EventName);
+            // Console.WriteLine(ev.EventLocation);
+            // return true;
             db.events.Add(ev);
+            db.SaveChanges();
+            // ModelState.Clear();
             return result;
         }
+
+
 
     }
 }
