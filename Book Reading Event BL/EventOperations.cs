@@ -43,7 +43,13 @@ namespace Book_Reading_Event_BL {
             return output;
         }
 
+        // Function To List All Invited Event
+        public List<Event> getInvitedEvent() {
+            var output = db.events.ToList();
+            return output;
+        }
 
+        
 
     }
 }
