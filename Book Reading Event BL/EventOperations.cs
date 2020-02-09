@@ -1,21 +1,23 @@
 ﻿using Book_Reading_Event_DAO;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Book_Reading_Event_BL
-{
-    public class EventOperations
-    {
+namespace Book_Reading_Event_BL {
+
+    public class EventOperations {
+
         bool result = false;
         private BookReadingContext db;
-        public EventOperations()
-        {
+
+        public EventOperations() {
             db = new BookReadingContext();
         }
 
+        // Function To Create Event
         public Boolean addEvents(Event ev) {
             if (ev == null) {
                 return false;
@@ -32,10 +34,8 @@ namespace Book_Reading_Event_BL
             db.events.Add(ev);
             db.SaveChanges();
             // ModelState.Clear();
-            return result;
+            return true;
         }
-
-
 
     }
 }
