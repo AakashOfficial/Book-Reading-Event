@@ -22,5 +22,11 @@ namespace Book_Reading_Event_DAO {
             db.SaveChanges();
             return true;
         }
+
+        // Function TO List All the User
+        public List<User> getUser() {
+            var output = db.user.ToList();
+            return output;
+        }
     }
 }
