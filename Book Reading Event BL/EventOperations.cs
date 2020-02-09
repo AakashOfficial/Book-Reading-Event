@@ -56,6 +56,14 @@ namespace Book_Reading_Event_BL {
             return true;
         }
 
+        // Functio TO Get Event Detail By Event Id
+        public Event getEventDetails(int id)
+        {
+            var output = db.events.Single(x => x.EventId == id);
+            return output;
+        }
+
         
+
     }
 }
