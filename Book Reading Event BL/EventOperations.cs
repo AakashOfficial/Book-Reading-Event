@@ -49,7 +49,13 @@ namespace Book_Reading_Event_BL {
             return output;
         }
 
-        
+        // Function To Update The Event By Event ID
+        public bool editEvents(Event ev) {
+            db.Entry(ev).State = EntityState.Modified;
+            db.SaveChanges();
+            return true;
+        }
 
+        
     }
 }
