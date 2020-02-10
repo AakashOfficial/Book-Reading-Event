@@ -64,6 +64,10 @@ namespace Book_Reading_UI.Areas.Security.Controllers {
             return View();
         }
 
+        public ActionResult Logout() {
 
+            Session["userId"] = 0;
+            return RedirectToAction("Login");
+        }
     }
 }
