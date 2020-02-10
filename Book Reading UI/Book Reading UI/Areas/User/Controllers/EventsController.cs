@@ -22,9 +22,7 @@ namespace Book_Reading_UI.Areas.User.Controllers {
         }
 
         // GET: User/Events
-        public ActionResult Index()
-        {
-            
+        public ActionResult Index() {
             var test = cf.CheckLoginUser();
             if (!test) {
                 return Redirect("/Security/Authentication/Login");
