@@ -6,10 +6,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Book_Reading_UI.Areas.User.Controllers
-{
-    public class EventsController : Controller
-    {
+namespace Book_Reading_UI.Areas.User.Controllers {
+
+    public class EventsController : Controller {
+
         private bool result = false;
 
         private EventOperations evop;
@@ -19,8 +19,7 @@ namespace Book_Reading_UI.Areas.User.Controllers
         }
 
         // GET: User/Events
-        public ActionResult Index()
-        {
+        public ActionResult Index() {
             return View();
         }
 
