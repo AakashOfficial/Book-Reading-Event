@@ -19,6 +19,17 @@ namespace Book_Reading_UI.Controllers {
                 return false;
             }
         }
-        
+
+        public void CheckLogged() {
+            bool loggedUserId = CheckLoginUser();
+            // System.Diagnostics.Debug.WriteLine(loggedUserId + " Aa Rhi");
+            if (loggedUserId) {
+                // System.Diagnostics.Debug.WriteLine(loggedUserId + " Aa Rhi");
+            } else {
+                // System.Diagnostics.Debug.WriteLine(loggedUserId + " Redirect Ho rha");
+                redirectLogin();
+            }
+        }
+
     }
 }
