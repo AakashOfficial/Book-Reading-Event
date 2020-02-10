@@ -68,5 +68,17 @@ namespace Book_Reading_UI.Areas.User.Controllers {
 
             return View();
         }
+
+        // Function To Event Created By User
+        public ActionResult ViewMyEvent() {
+            var test = cf.CheckLoginUser();
+            if (!test) {
+                return Redirect("/Security/Authentication/Login");
+            }
+
+            var output = evop.getCreatedEvent(cf.LoggedUserId());
+
+            return View(output);
+        }
     }
 }
