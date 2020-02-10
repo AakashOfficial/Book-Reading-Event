@@ -63,6 +63,12 @@ namespace Book_Reading_UI.Areas.User.Controllers {
             return View();
         }
 
-        
+        // Function To Invite Registered User
+        public ActionResult InviteUser(int id) {
+            string userName = Request.Form["txtUserName"];
+            string password = Request.Form["txtPassword"];
+
+            return View();
+        }
     }
 }
