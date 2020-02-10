@@ -41,5 +41,24 @@ namespace Book_Reading_Event_DAO {
             return listUser;
         }
 
+        // Function To Check ID and Password
+        public int checkUser(string useremail, string password) {
+            int userId = 0;
+            if (useremail == null && useremail == "" && password == null && password == "") {
+                return 0;
+            }
+            var userData = db.user.ToList().Where(d => d.UserEmail == useremail && d.UserPassword == password);
+            System.Diagnostics.Debug.WriteLine(userData.Count<User>());
+            foreach (var item in userData) {
+                userId = item.UserId;
+                // System.Diagnostics.Debug.WriteLine(item.UserId);
+            }
+            // System.Diagnostics.Debug.WriteLine(userId);
+            if (userData != null) {
+                return userId;
+            } else {
+                return 0;
+            }
+        }
     }
 }
