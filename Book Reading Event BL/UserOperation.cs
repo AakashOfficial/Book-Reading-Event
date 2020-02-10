@@ -14,6 +14,14 @@ namespace Book_Reading_Event_DAO {
             db = new BookReadingContext();
         }
 
-        
+        public bool addUser(User us) {
+            if (us == null) {
+                return false;
+            }
+            db.user.Add(us);
+            db.SaveChanges();
+            return true;
+        }
+
     }
 }
