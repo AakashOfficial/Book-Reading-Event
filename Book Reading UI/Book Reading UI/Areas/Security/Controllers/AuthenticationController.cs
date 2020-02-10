@@ -18,5 +18,11 @@ namespace Book_Reading_UI.Areas.Security.Controllers {
             uo = new UserOperation();
         }
 
-            }
+        // GET: Security/Authentication
+        public ActionResult Login() {
+
+            return View();
+        }
+
+    }
 }
