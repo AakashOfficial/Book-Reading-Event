@@ -24,5 +24,10 @@ namespace Book_Reading_UI.Areas.Security.Controllers {
             return View();
         }
 
+        public ActionResult Validate() {
+
+            return View();
+        }
+
     }
 }
