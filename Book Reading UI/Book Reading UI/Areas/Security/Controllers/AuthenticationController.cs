@@ -59,6 +59,11 @@ namespace Book_Reading_UI.Areas.Security.Controllers {
             return RedirectToAction("Login");
         }
 
-        
+        public ActionResult Home() {
+
+            return View();
+        }
+
+
     }
 }
