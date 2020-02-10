@@ -47,5 +47,11 @@ namespace Book_Reading_UI.Areas.Security.Controllers {
             }            
         }
 
+        public ActionResult Register() {
+
+            return View();
+        }
+
+        
     }
 }
