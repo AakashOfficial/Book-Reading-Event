@@ -20,24 +20,9 @@ namespace Book_Reading_UI.Areas.Security.Controllers {
 
         // GET: Security/Authentication
         public ActionResult Login() {
-
+            // System.Diagnostics.Debug.WriteLine("Aa Rhi");
             return View();
         }
 
-        public ActionResult Validate() {
-
-            return View();
-        }
-
-        public ActionResult Register() {
-
-            return View();
-        }
-
-        public ActionResult Registeration(Book_Reading_Event_DAO.User usr) {
-
-            var result = uo.addUser(usr);
-            return RedirectToAction("Login");
-        }
-    }
+            }
 }
