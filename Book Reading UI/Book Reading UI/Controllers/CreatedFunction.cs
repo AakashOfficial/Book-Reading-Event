@@ -37,6 +37,15 @@ namespace Book_Reading_UI.Controllers {
             return RedirectToAction("/Security/Authentication/Login");
         }
 
+        public int LoggedUserId() {
 
+            var log = CheckLoginUser();
+            int userId = 0;
+            if (log) {
+                userId = (int)System.Web.HttpContext.Current.Session["userId"];
+            }
+
+            return userId;
+        }
     }
 }
