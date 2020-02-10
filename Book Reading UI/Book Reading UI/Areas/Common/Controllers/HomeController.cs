@@ -9,8 +9,9 @@ namespace Book_Reading_UI.Areas.Common.Controllers
     public class HomeController : Controller
     {
         // GET: Common/Home
-        public ActionResult Index()
-        {
+        public ActionResult Index() {
+
+            System.Diagnostics.Debug.WriteLine((int)Session["userId"]);
             return View();
         }
     }
