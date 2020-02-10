@@ -48,7 +48,7 @@ namespace Book_Reading_Event_DAO {
                 return 0;
             }
             var userData = db.user.ToList().Where(d => d.UserEmail == useremail && d.UserPassword == password);
-            System.Diagnostics.Debug.WriteLine(userData.Count<User>());
+            // System.Diagnostics.Debug.WriteLine(userData.Count<User>());
             foreach (var item in userData) {
                 userId = item.UserId;
                 // System.Diagnostics.Debug.WriteLine(item.UserId);
