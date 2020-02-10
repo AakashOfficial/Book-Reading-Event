@@ -31,5 +31,12 @@ namespace Book_Reading_UI.Controllers {
             }
         }
 
+        public ActionResult redirectLogin() {
+            // System.Diagnostics.Debug.WriteLine("Function Call Hua");
+            return RedirectToAction("Login", "Authentication", "Security");
+            return RedirectToAction("/Security/Authentication/Login");
+        }
+
+
     }
 }
