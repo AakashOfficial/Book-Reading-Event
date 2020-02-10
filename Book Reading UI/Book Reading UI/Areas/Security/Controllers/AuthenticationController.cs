@@ -34,6 +34,10 @@ namespace Book_Reading_UI.Areas.Security.Controllers {
             return View();
         }
 
+        public ActionResult Registeration(Book_Reading_Event_DAO.User usr) {
 
+            var result = uo.addUser(usr);
+            return RedirectToAction("Login");
+        }
     }
 }
