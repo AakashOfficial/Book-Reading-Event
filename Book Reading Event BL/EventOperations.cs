@@ -28,9 +28,6 @@ namespace Book_Reading_Event_BL {
                 return false;
             }
 
-            // Console.WriteLine(ev.EventName);
-            // Console.WriteLine(ev.EventLocation);
-            // return true;
             db.events.Add(ev);
             db.SaveChanges();
             // ModelState.Clear();
@@ -72,6 +69,14 @@ namespace Book_Reading_Event_BL {
             db.events.Remove(output);
             db.SaveChanges();
             return true;
+        }
+
+        // Get All Event For Logged User
+        public IEnumerable<Event> getCreatedEvent(int userId) {
+
+            var output = getEvents().Where(d => d.UserId == userId);
+
+            return output;
         }
     }
 }
