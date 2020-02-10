@@ -29,5 +29,17 @@ namespace Book_Reading_Event_DAO {
             return output;
         }
 
+        // Function To List all user Id and Name
+        public string[] UserIds() {
+            string[] listUser = { };
+            var output = db.user.ToList();
+
+            foreach (var user in output) {
+                // System.Diagnostics.Debug.WriteLine(user.UserName);
+                listUser[user.UserId] = user.UserName;
+            }
+            return listUser;
+        }
+
     }
 }
