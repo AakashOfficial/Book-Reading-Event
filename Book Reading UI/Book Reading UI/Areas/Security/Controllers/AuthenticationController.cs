@@ -24,5 +24,28 @@ namespace Book_Reading_UI.Areas.Security.Controllers {
             return View();
         }
 
-            }
+        public ActionResult Validate() {
+
+            string useremail = Request.Form["UserEmail"];
+            string password = Request.Form["UserPassword"];
+
+            System.Diagnostics.Debug.WriteLine(useremail);
+            System.Diagnostics.Debug.WriteLine(password);
+
+            if (useremail != null && useremail != "" && password != null && password != "") {
+
+                int userId = uo.checkUser(useremail, password);
+                if (userId != 0) {
+                    Session["userId"] = userId;
+                    System.Diagnostics.Debug.WriteLine((int)Session["userId"]);
+                    return RedirectToAction("Home");
+                } else {
+                    return RedirectToAction("Login");
+                }                
+            } else {
+                return RedirectToAction("Login");
+            }            
+        }
+
+    }
 }
