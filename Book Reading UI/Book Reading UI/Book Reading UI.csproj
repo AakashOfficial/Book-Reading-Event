@@ -140,6 +140,7 @@
     <Content Include="Areas\Security\Views\Authentication\Register.cshtml" />
     <Content Include="Areas\Security\Views\Authentication\Home.cshtml" />
     <Content Include="Areas\User\Views\Events\ViewMyEvent.cshtml" />
+    <Content Include="Areas\User\Views\Events\PublicEvents.cshtml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
