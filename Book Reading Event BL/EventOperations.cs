@@ -34,7 +34,7 @@ namespace Book_Reading_Event_BL {
             return true;
         }
         
-        // Function TO List All the Evevt Created By User
+        // Function To List All the Evevt Created By User
         public List<Event> getEvents() {
             var output = db.events.ToList();
             return output;
@@ -96,6 +96,13 @@ namespace Book_Reading_Event_BL {
                 db.SaveChanges();
             }
             return true;
+        }
+
+        // Function To Find All Public Events
+        public IEnumerable<Event> getPublicEvent() {
+
+            var output = getEvents().Where(d => d.EventType == 2);
+            return output;
         }
     }
 }
