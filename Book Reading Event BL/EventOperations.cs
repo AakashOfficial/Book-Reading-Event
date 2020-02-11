@@ -41,7 +41,8 @@ namespace Book_Reading_Event_BL {
         }
 
         // Function To Update The Event By Event ID
-        public bool editEvents(Event ev) {
+        public bool editEvents(Event ev,int userId) {
+            ev.UserId = userId;
             db.Entry(ev).State = EntityState.Modified;
             db.SaveChanges();
             return true;
