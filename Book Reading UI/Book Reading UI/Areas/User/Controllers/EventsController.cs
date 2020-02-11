@@ -46,13 +46,13 @@ namespace Book_Reading_UI.Areas.User.Controllers {
         }
 
         // Function To View Edit Form of Event
-        public ActionResult Edit(int eventid) {
+        public ActionResult Edit(int id) {
 
-            if (eventid == null) {
+            if (id == 0) {
                 return HttpNotFound();
             }
-
-            return View();
+            var output = evop.getEventDetails(id);
+            return View(output);
         }
 
         // Function To Edit the Event
@@ -91,5 +91,7 @@ namespace Book_Reading_UI.Areas.User.Controllers {
             var output = evop.getEventDetails(id);
             return View(output);
         }
+
+        // public ActionResult
     }
 }
