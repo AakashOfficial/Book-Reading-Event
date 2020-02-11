@@ -85,5 +85,11 @@ namespace Book_Reading_UI.Areas.User.Controllers {
             var output = evop.getPublicEvent();
             return View(output);
         }
+
+        public ActionResult ViewPublicDetail(int id) {
+
+            var output = evop.getEventDetails(id);
+            return View(output);
+        }
     }
 }
