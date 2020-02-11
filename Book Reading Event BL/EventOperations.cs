@@ -40,12 +40,6 @@ namespace Book_Reading_Event_BL {
             return output;
         }
 
-        // Function To List All Invited Event
-        public List<Event> getInvitedEvent() {
-            var output = db.events.ToList();
-            return output;
-        }
-
         // Function To Update The Event By Event ID
         public bool editEvents(Event ev) {
             db.Entry(ev).State = EntityState.Modified;
@@ -77,6 +71,31 @@ namespace Book_Reading_Event_BL {
             var output = getEvents().Where(d => d.UserId == userId);
 
             return output;
+        }
+
+        // Function To List All Invited Event
+        public List<Event> getInvitedEvent() {
+            var output = db.events.ToList();
+            return output;
+        }
+
+        // Function To Invite the User
+        public bool inviteUser(int eventId,int[] userId ) {
+            if (eventId == 0) {
+                return false;
+            }
+
+            Invitation invitation = new Invitation();
+
+            for (int i = 0; i < userId.Length; i++) {
+                invitation.EventId = eventId;
+                invitation.UserId = userId[i];
+                invitation.InvitationActive = 1;
+
+                db.invitation.Add(invitation);
+                db.SaveChanges();
+            }
+            return true;
         }
     }
 }
