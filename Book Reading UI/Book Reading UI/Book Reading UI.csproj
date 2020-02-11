@@ -142,6 +142,7 @@
     <Content Include="Areas\User\Views\Events\ViewMyEvent.cshtml" />
     <Content Include="Areas\User\Views\Events\PublicEvents.cshtml" />
     <Content Include="Areas\User\Views\Events\ViewPublicDetail.cshtml" />
+    <Content Include="Areas\User\Views\Events\Edit.cshtml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
