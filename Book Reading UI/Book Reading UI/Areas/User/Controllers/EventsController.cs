@@ -47,6 +47,10 @@ namespace Book_Reading_UI.Areas.User.Controllers {
 
         // Function To View Edit Form of Event
         public ActionResult Edit(int id) {
+            var test = cf.CheckLoginUser();
+            if (!test) {
+                return Redirect("/Security/Authentication/Login");
+            }
 
             if (id == 0) {
                 return HttpNotFound();
