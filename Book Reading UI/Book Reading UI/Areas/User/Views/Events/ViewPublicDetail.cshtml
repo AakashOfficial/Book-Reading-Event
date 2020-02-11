@@ -1,0 +1,99 @@
+﻿@model Book_Reading_Event_DAO.Event
+
+@{
+    ViewBag.Title = "ViewPublicDetail";
+}
+
+<h2>Event Detail</h2>
+
+<div>
+    <h4>Event</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @* @Html.DisplayNameFor(model => model.User.UserName) *@
+            Organised By
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventOtherDetails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventOtherDetails)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventDuration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventDuration)
+        </dd>
+
+        @* <dt>
+            @Html.DisplayNameFor(model => model.EventType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventType)
+        </dd> *@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventStartTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventStartTime)
+        </dd>
+
+        @* <dt>
+            @Html.DisplayNameFor(model => model.EventActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventActive)
+        </dd> *@
+
+    </dl>
+</div>
+<p>
+    @* @Html.ActionLink("Edit", "Edit", new { id = Model.EventId }) |
+    @Html.ActionLink("Back to List", "Index") *@
+</p>
