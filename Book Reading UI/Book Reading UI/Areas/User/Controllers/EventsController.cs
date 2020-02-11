@@ -61,8 +61,14 @@ namespace Book_Reading_UI.Areas.User.Controllers {
 
         // Function To Edit the Event
         public ActionResult UpdateEvent(Event ev) {
+            var test = cf.CheckLoginUser();
+            if (!test) {
+                return Redirect("/Security/Authentication/Login");
+            }
 
-            return View();
+            evop.editEvents(ev, cf.LoggedUserId());
+
+            return Redirect("/User/Events/Index");
         }
 
         // Function To Invite Registered User
