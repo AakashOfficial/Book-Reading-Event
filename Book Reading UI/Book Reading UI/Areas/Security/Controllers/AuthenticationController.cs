@@ -1,5 +1,6 @@
 ﻿using Book_Reading_Event_BL;
 using Book_Reading_Event_DAO;
+using Book_Reading_UI.Controllers;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,13 +10,14 @@ using System.Web.Mvc;
 
 namespace Book_Reading_UI.Areas.Security.Controllers {
 
-    // [AllowAnonymous]
     public class AuthenticationController : Controller {
 
         private UserOperation uo;
+        private CreatedFunction cf;
 
         public AuthenticationController(){
             uo = new UserOperation();
+            cf = new CreatedFunction();
         }
 
         // GET: Security/Authentication
@@ -48,7 +50,7 @@ namespace Book_Reading_UI.Areas.Security.Controllers {
         }
 
         public ActionResult Register() {
-
+            Session["userId"] = 0;
             return View();
         }
 
@@ -60,6 +62,10 @@ namespace Book_Reading_UI.Areas.Security.Controllers {
         }
 
         public ActionResult Home() {
+            var test = cf.CheckLoginUser();
+            if (!test) {
+                return Redirect("/Security/Authentication/Login");
+            }
 
             return View();
         }
