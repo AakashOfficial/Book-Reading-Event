@@ -78,9 +78,11 @@
         </td>
         <td>
             @Html.ActionLink("Edit Event", "Edit", new { id = item.EventId }) |
-            @Html.ActionLink("Details", "Details", new { id = item.EventId }) |
+            @* @Html.ActionLink("Details", "Details", new { id = item.EventId }) | *@
+            @Html.ActionLink("View Details", "ViewPublicDetail", new { id = item.EventId }) |
             @Html.ActionLink("Delete", "Delete", new { id = item.EventId }) |
-            @if (item.EventType == 1) {
+            @if (item.EventType == 1)
+            {
                 Html.ActionLink("Invite User", "Delete", new { id = item.EventId });
             }
         </td>
