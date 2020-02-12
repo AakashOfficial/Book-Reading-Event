@@ -121,8 +121,9 @@ namespace Book_Reading_UI.Areas.User.Controllers {
             if (!test) {
                 return Redirect("/Security/Authentication/Login");
             }
-
+            
             var output = evop.getEventDetails(id);
+            ViewBag.eventid = id;
             return View();
         }
 
