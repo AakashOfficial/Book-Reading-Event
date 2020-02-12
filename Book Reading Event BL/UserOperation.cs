@@ -66,5 +66,10 @@ namespace Book_Reading_Event_DAO {
             var result = db.user.Single(d => d.UserId == userId);
             return result.UserRole ;
         }
+
+        public IEnumerable<User> getUserData() {
+            var output = db.user.ToList().Where(d => d.UserRole == "U");
+            return output;
+        }
     }
 }
