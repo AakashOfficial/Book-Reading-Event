@@ -60,5 +60,12 @@ namespace Book_Reading_Event_DAO {
                 return 0;
             }
         }
+
+        // Function to Get the User Role
+        public string getRole(int userId) {
+            var result = db.user.Single(d => d.UserId == userId);
+
+            return result.UserRole ;
+        }
     }
 }
