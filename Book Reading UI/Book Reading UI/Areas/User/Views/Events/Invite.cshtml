@@ -1,0 +1,36 @@
+﻿@model Book_Reading_Event_DAO.Event
+
+@{
+    ViewBag.Title = "Invite";
+}
+
+<h2>Invite Users</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EventName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventName)
+        </dd>
+    </dl>
+    <form>
+        <input type="hidden" name="eventId" value="@ViewBag.eventId"/>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @Html.DropDownList("userId", ViewBag.userlist as SelectList)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Invite" class="btn btn-default" />
+            </div>
+        </div>
+
+    </form>
+</div>
