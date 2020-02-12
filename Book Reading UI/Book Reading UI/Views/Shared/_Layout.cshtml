@@ -26,7 +26,7 @@
 
                 bool userlogeedin = testuser.CheckLoginUser();
                 if (userlogeedin) {
-                    <li class="active">@Html.ActionLink("Home", "Home", new { controller = "Events", area = "User" })</li>
+                    <li class="active">@Html.ActionLink("Home", "Home", new { controller = "Authentication", area = "Security" })</li>
                     <li>@Html.ActionLink("Create Event", "Index", new { Controller = "Events", Area = "User" })</li>
                     <li>@Html.ActionLink("View My Events", "ViewMyEvent", new { Controller = "Events", Area = "User" })</li>
                     <li>@Html.ActionLink("Logout", "Logout", new { Controller = "Authentication", Area = "Security" })</li>
