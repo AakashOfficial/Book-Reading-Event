@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Book_Reading_Event_BL {
 
-    class InvitationOperations {
+    public class InvitationOperations {
 
         private BookReadingContext db;
 
