@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EventOperations.cs" />
+    <Compile Include="InvitationOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserOperation.cs" />
   </ItemGroup>
