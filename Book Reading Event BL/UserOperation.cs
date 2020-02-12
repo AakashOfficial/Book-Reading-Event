@@ -31,7 +31,7 @@ namespace Book_Reading_Event_DAO {
 
         // Function To List all user Id and Name
         public string[] UserIds() {
-            string[] listUser = { };
+            string[] listUser = null ;
             var output = db.user.ToList();
 
             foreach (var user in output) {
