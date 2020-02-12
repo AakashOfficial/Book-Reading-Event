@@ -60,12 +60,16 @@
 
     </dl>
 
-    @using (Html.BeginForm("DeleteEvent", "Events", FormMethod.Post)){
-        @Html.AntiForgeryToken()
+    @* @using (Html.BeginForm("DeleteEvent", "Events", FormMethod.Post)){
+            @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
             <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Delete", "DeleteEvent", new { id = ViewBag.eventid })  |
             @Html.ActionLink("Create New", "Index")
         </div>
-    }
+        } *@
+
+    @Html.ActionLink("Delete", "DeleteEvent", new { id = ViewBag.eventid })  |
+    @Html.ActionLink("Create New", "Index")
 </div>
