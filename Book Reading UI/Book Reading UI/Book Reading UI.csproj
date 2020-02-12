@@ -138,6 +138,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Areas\Test\Views\web.config" />
+    <Content Include="Areas\Test\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Test\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Test\Views\Test\Index.cshtml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -222,6 +226,8 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <None Include="Content\bootstrap.cssss" />
+    <None Include="Content\bootstrap.min.cssss" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -232,6 +238,8 @@
     <Compile Include="Areas\Common\Controllers\HomeController.cs" />
     <Compile Include="Areas\Security\Controllers\AuthenticationController.cs" />
     <Compile Include="Areas\Security\SecurityAreaRegistration.cs" />
+    <Compile Include="Areas\Test\Controllers\TestController.cs" />
+    <Compile Include="Areas\Test\TestAreaRegistration.cs" />
     <Compile Include="Areas\User\Controllers\EventsController.cs" />
     <Compile Include="Areas\User\Controllers\UserController.cs" />
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
@@ -273,6 +281,7 @@
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Common\Models\" />
     <Folder Include="Areas\Security\Models\" />
+    <Folder Include="Areas\Test\Models\" />
     <Folder Include="Areas\User\Models\" />
     <Folder Include="Areas\User\Views\Shared\" />
     <Folder Include="Areas\User\Views\User\" />
