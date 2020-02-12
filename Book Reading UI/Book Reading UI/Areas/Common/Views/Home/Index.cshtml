@@ -1,7 +1,101 @@
-﻿
+﻿@model IEnumerable<Book_Reading_Event_DAO.Event>
+
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Default Home";
 }
+<div class="row col-12 col-md-12">
 
-<h2>Index</h2>
+    <div class="col-4 col-md-4">
+        <table class="table">
+            <tr><th colspan="4"><h2>Upcoming Events</h2></th></tr>
+            <tr>
+                <th>
+                    @* @Html.DisplayNameFor(model => model.User.UserName) *@
+                    Organised By
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventLocation)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventDate)
+                </th>
+                <th></th>
+            </tr>
 
+            @foreach (var item in Model)
+            {
+                var eventDate = item.EventDate.ToString("yyyy-MM-dd");
+                var currentDate = DateTime.Now.ToString("yyyy-MM-dd");
+                DateTime eDate = Convert.ToDateTime(eventDate);
+                DateTime cDate = Convert.ToDateTime(currentDate);
+                if (eDate > cDate) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.User.UserName)
+                        </td>
+                        <td>
+                            @Html.ActionLink(item.EventName, "ViewPublicDetail", new { controller = "Events", area = "User", id = item.EventId })
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EventLocation)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EventDate)
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+
+    <div class="col-3 col-md-3"></div>
+
+    <div class="col-4 col-md-4">
+        <table class="table">
+            <tr><th colspan="4"><h2>Past Events</h2></th></tr>
+            <tr>
+                <th>
+                    @* @Html.DisplayNameFor(model => model.User.UserName) *@
+                    Organised By
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventLocation)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventDate)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                var eventDate = item.EventDate.ToString("yyyy-MM-dd");
+                var currentDate = DateTime.Now.ToString("yyyy-MM-dd");
+                DateTime eDate = Convert.ToDateTime(eventDate);
+                DateTime cDate = Convert.ToDateTime(currentDate);
+                if (eDate < cDate) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.User.UserName)
+                        </td>
+                        <td>
+                            @Html.ActionLink(item.EventName, "ViewPublicDetail", new { controller = "Events", area = "User", id = item.EventId })
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EventLocation)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EventDate)
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+</div>
