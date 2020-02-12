@@ -102,6 +102,14 @@ namespace Book_Reading_UI.Areas.User.Controllers {
             return View(output);
         }
 
-        // public ActionResult
+        public ActionResult UpcomingEvents() {
+
+            return View();
+        }
+
+        public ActionResult PastEvents() {
+
+            return View();
+        }
     }
 }
