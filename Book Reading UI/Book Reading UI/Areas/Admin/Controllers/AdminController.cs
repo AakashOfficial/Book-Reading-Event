@@ -24,8 +24,8 @@ namespace Book_Reading_UI.Areas.Admin.Controllers {
         }
 
         public ActionResult AllUsers() {
-
-            return View();
+            var output = userOperation.getUserData();
+            return View(output);
         }
     }
 }
