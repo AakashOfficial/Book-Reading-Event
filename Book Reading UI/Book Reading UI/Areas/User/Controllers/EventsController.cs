@@ -140,11 +140,11 @@ namespace Book_Reading_UI.Areas.User.Controllers {
             if (!test) {
                 return Redirect("/Security/Authentication/Login");
             }
-            System.Diagnostics.Debug.WriteLine(cf.LoggedUserId());
+            // System.Diagnostics.Debug.WriteLine(cf.LoggedUserId());
             var userInvitations = invitationOperations.getInvitation(cf.LoggedUserId());
             List<Event> getEvent = new List<Event>();
             foreach (var output in userInvitations) {
-                System.Diagnostics.Debug.WriteLine(output.EventId);
+                // System.Diagnostics.Debug.WriteLine(output.EventId);
                 getEvent.Add(evop.getEventDetails(output.EventId));
             }
             return View(getEvent);
