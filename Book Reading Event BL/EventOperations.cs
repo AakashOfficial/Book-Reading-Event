@@ -101,7 +101,6 @@ namespace Book_Reading_Event_BL {
 
         // Function To Find All Public Events
         public IEnumerable<Event> getPublicEvent() {
-
             var output = getEvents().Where(d => d.EventType == 2);
             return output;
         }
