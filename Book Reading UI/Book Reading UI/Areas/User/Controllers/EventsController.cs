@@ -115,7 +115,7 @@ namespace Book_Reading_UI.Areas.User.Controllers {
             return View();
         }
 
-        // Function to Delete an Event
+        // Function to Show Delete Form of an Event
         public ActionResult Delete(int id) {
             var test = cf.CheckLoginUser();
             if (!test) {
@@ -124,6 +124,12 @@ namespace Book_Reading_UI.Areas.User.Controllers {
 
             var output = evop.getEventDetails(id);
             return View();
+        }
+
+        // Function To Delete An Event
+        public ActionResult DeleteEvent() {
+
+            return Redirect("/User/Events/ViewMyEvent");
         }
     }
 }
