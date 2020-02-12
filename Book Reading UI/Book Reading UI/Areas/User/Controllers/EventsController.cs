@@ -15,10 +15,12 @@ namespace Book_Reading_UI.Areas.User.Controllers {
 
         private EventOperations evop;
         private CreatedFunction cf;
+        private InvitationOperations invitationOperations;
 
         public EventsController(){
             evop = new EventOperations();
             cf = new CreatedFunction();
+            invitationOperations = new InvitationOperations();
         }
 
         // GET: User/Events
@@ -134,7 +136,16 @@ namespace Book_Reading_UI.Areas.User.Controllers {
         }
 
         public ActionResult Invitations() {
+            var test = cf.CheckLoginUser();
+            if (!test) {
+                return Redirect("/Security/Authentication/Login");
+            }
 
+            var userInvitations = invitationOperations.getInvitation(cf.LoggedUserId());
+            List<Event> getEvent = new List<Event>();
+            foreach (var output in userInvitations) {
+                getEvent.Add(evop.getEventDetails(output.EventId));
+            }
             return View();
         }
     }
