@@ -105,8 +105,8 @@ namespace Book_Reading_UI.Areas.User.Controllers {
 
         // Function To View Upcoming Event
         public ActionResult UpcomingEvents() {
-
-            return View();
+            var output = evop.getPublicEvent();
+            return View(output);
         }
 
         // Function To View Past Event
