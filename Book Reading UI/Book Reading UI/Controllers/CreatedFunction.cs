@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Book_Reading_Event_DAO;
+using System;
 
 using System.Collections.Generic;
 using System.IO;
@@ -34,7 +35,7 @@ namespace Book_Reading_UI.Controllers {
         public ActionResult redirectLogin() {
             // System.Diagnostics.Debug.WriteLine("Function Call Hua");
             return RedirectToAction("Login", "Authentication", "Security");
-            return RedirectToAction("/Security/Authentication/Login");
+            // return RedirectToAction("/Security/Authentication/Login");
         }
 
         public int LoggedUserId() {
@@ -46,6 +47,12 @@ namespace Book_Reading_UI.Controllers {
             }
 
             return userId;
+        }
+
+        public string GetUserRole(int userId) {
+            UserOperation userOperation = new UserOperation();
+            var role = userOperation.getRole(userId);
+            return role;
         }
     }
 }
