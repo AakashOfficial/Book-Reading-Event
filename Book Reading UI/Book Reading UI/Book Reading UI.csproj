@@ -117,6 +117,7 @@
     <Content Include="Areas\User\Views\Events\Edit.cshtml" />
     <Content Include="Areas\User\Views\Events\UpcomingEvents.cshtml" />
     <Content Include="Areas\User\Views\Events\PastEvents.cshtml" />
+    <Content Include="Areas\User\Views\Events\Delete.cshtml" />
     <None Include="Content\bootstrap.cssss" />
     <None Include="Content\bootstrap.min.cssss" />
     <Content Include="Scripts\esm\popper-utils.js" />
