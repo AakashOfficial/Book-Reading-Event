@@ -132,5 +132,10 @@ namespace Book_Reading_UI.Areas.User.Controllers {
             bool result = evop.deleteEvent(id);
             return Redirect("/User/Events/ViewMyEvent");            
         }
+
+        public ActionResult Invitations() {
+
+            return View();
+        }
     }
 }
