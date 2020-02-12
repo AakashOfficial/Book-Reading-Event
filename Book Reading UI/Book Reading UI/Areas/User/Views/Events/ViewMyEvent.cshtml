@@ -83,7 +83,7 @@
             @Html.ActionLink("Delete", "Delete", new { id = item.EventId }) |
             @if (item.EventType == 1)
             {
-                Html.ActionLink("Invite User", "Delete", new { id = item.EventId });
+                @Html.ActionLink("Invite User", "Invite", new { id = item.EventId });
             }
         </td>
     </tr>
