@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Book_Reading_Event_DAO.Event>
+
+@{
+    ViewBag.Title = "Invitations";
+}
+
+<h2>Event Invitations</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @* @Html.DisplayNameFor(model => model.User.UserName) *@
+            Organized By
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventOtherDetails)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventDuration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventStartTime)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventOtherDetails)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventDuration)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventStartTime)
+        </td>
+        <td>
+            @Html.ActionLink("View Event Details", "ViewPublicDetail", new { controller = "Events", area = "User", id = item.EventId })
+        </td>
+    </tr>
+}
+
+</table>
