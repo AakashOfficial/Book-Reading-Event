@@ -16,11 +16,13 @@ namespace Book_Reading_UI.Areas.User.Controllers {
         private EventOperations evop;
         private CreatedFunction cf;
         private InvitationOperations invitationOperations;
+        private UserOperation userOperation;
 
         public EventsController(){
             evop = new EventOperations();
             cf = new CreatedFunction();
             invitationOperations = new InvitationOperations();
+            userOperation = new UserOperation();
         }
 
         // GET: User/Events
@@ -73,9 +75,17 @@ namespace Book_Reading_UI.Areas.User.Controllers {
             return Redirect("/User/Events/Index");
         }
 
+        // Function TO View Invitation Form
+        public ActionResult Invite(int id) {
+            var output = evop.getEventDetails(id);
+            ViewBag.eventId = id;
+            ViewBag.userlist = userOperation.UserIds();
+            return View(output);
+        }
+
         // Function To Invite Registered User
-        public ActionResult InviteUser(int id) {
-            string userName = Request.Form["txtUserName"];
+        public ActionResult InviteUser() {
+            string userName = Request.Form["eventid"];
             string password = Request.Form["txtPassword"];
 
             return View();
