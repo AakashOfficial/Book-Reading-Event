@@ -111,8 +111,8 @@ namespace Book_Reading_UI.Areas.User.Controllers {
 
         // Function To View Past Event
         public ActionResult PastEvents() {
-
-            return View();
+            var output = evop.getPublicEvent();
+            return View(output);
         }
 
         // Function to Show Delete Form of an Event
