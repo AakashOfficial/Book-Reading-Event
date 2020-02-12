@@ -127,9 +127,9 @@ namespace Book_Reading_UI.Areas.User.Controllers {
         }
 
         // Function To Delete An Event
-        public ActionResult DeleteEvent() {
-
-            return Redirect("/User/Events/ViewMyEvent");
+        public ActionResult DeleteEvent(int id) {
+            bool result = evop.deleteEvent(id);
+            return Redirect("/User/Events/ViewMyEvent");            
         }
     }
 }
