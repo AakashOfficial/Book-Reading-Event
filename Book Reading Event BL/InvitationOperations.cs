@@ -15,6 +15,12 @@ namespace Book_Reading_Event_BL {
             db = new BookReadingContext();
         }
 
+        public bool addInvitation(Invitation invitation) {
+            db.invitation.Add(invitation);
+            db.SaveChanges();
+            return true;
+        }
+
         public IEnumerable<Invitation> getInvitation(int userId) {
             var output = db.invitation.ToList().Where(d=>d.UserId == userId);
             return output;
