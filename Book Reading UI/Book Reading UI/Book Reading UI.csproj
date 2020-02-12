@@ -107,7 +107,6 @@
     <Content Include="Areas\Admin\Views\Admin\Index.cshtml" />
     <Content Include="Areas\Common\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Common\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Common\Views\Home\Index.cshtml" />
     <Content Include="Areas\Security\Views\Authentication\Login.cshtml" />
     <Content Include="Areas\Security\Views\Authentication\Register.cshtml" />
     <Content Include="Areas\Security\Views\Authentication\Home.cshtml" />
@@ -118,6 +117,7 @@
     <Content Include="Areas\User\Views\Events\UpcomingEvents.cshtml" />
     <Content Include="Areas\User\Views\Events\PastEvents.cshtml" />
     <Content Include="Areas\User\Views\Events\Delete.cshtml" />
+    <Content Include="Areas\Common\Views\Home\Index.cshtml" />
     <None Include="Content\bootstrap.cssss" />
     <None Include="Content\bootstrap.min.cssss" />
     <Content Include="Scripts\esm\popper-utils.js" />
