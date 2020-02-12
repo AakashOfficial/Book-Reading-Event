@@ -97,7 +97,7 @@ namespace Book_Reading_UI.Areas.User.Controllers {
             return View(output);
         }
 
-        // Function To View Event Detail
+        // Function To View Events Detail
         public ActionResult ViewPublicDetail(int id) {
             var output = evop.getEventDetails(id);
             return View(output);
