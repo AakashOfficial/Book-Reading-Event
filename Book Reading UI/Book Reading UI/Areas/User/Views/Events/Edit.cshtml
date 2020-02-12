@@ -5,6 +5,9 @@
 }
 
 <h2>Edit</h2>
+<div>
+    @Html.ActionLink("Create New", "Index")
+</div>
 
 @using (Html.BeginForm("UpdateEvent", "Events", FormMethod.Post))
 {
@@ -89,5 +92,5 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Create New", "Index")
 </div>
