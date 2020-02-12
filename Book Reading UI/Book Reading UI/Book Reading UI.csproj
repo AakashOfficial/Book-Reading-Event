@@ -115,6 +115,8 @@
     <Content Include="Areas\User\Views\Events\PublicEvents.cshtml" />
     <Content Include="Areas\User\Views\Events\ViewPublicDetail.cshtml" />
     <Content Include="Areas\User\Views\Events\Edit.cshtml" />
+    <Content Include="Areas\User\Views\Events\UpcomingEvents.cshtml" />
+    <Content Include="Areas\User\Views\Events\PastEvents.cshtml" />
     <None Include="Content\bootstrap.cssss" />
     <None Include="Content\bootstrap.min.cssss" />
     <Content Include="Scripts\esm\popper-utils.js" />
@@ -219,7 +221,6 @@
     <Compile Include="Areas\Security\Controllers\AuthenticationController.cs" />
     <Compile Include="Areas\Security\SecurityAreaRegistration.cs" />
     <Compile Include="Areas\User\Controllers\EventsController.cs" />
-    <Compile Include="Areas\User\Controllers\UserController.cs" />
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
     <Compile Include="Controllers\CreatedFunction.cs" />
     <Compile Include="Global.asax.cs">
@@ -263,7 +264,6 @@
     <Folder Include="Areas\Security\Models\" />
     <Folder Include="Areas\User\Models\" />
     <Folder Include="Areas\User\Views\Shared\" />
-    <Folder Include="Areas\User\Views\User\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
