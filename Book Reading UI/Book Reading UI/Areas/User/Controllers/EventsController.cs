@@ -91,24 +91,38 @@ namespace Book_Reading_UI.Areas.User.Controllers {
             return View(output);
         }
 
+        // Function To View Public Event
         public ActionResult PublicEvents() {
             var output = evop.getPublicEvent();
             return View(output);
         }
 
+        // Function To View Event Detail
         public ActionResult ViewPublicDetail(int id) {
-
             var output = evop.getEventDetails(id);
             return View(output);
         }
 
+        // Function To View Upcoming Event
         public ActionResult UpcomingEvents() {
 
             return View();
         }
 
+        // Function To View Past Event
         public ActionResult PastEvents() {
 
+            return View();
+        }
+
+        // Function to Delete an Event
+        public ActionResult Delete(int id) {
+            var test = cf.CheckLoginUser();
+            if (!test) {
+                return Redirect("/Security/Authentication/Login");
+            }
+
+            var output = evop.getEventDetails(id);
             return View();
         }
     }
