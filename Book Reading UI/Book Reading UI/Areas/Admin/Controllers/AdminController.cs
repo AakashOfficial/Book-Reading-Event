@@ -30,7 +30,7 @@ namespace Book_Reading_UI.Areas.Admin.Controllers {
 
         public ActionResult AllEvents() {
             var output = eventOperations.getEvents();
-            return View();
+            return View(output);
         }
     }
 }
