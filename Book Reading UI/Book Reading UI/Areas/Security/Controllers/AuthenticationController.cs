@@ -54,7 +54,32 @@ namespace Book_Reading_UI.Areas.Security.Controllers {
             return View();
         }
 
-        
+        public ActionResult Registeration() {
+            string username = Request.Form["UserName"];
+            string useremail = Request.Form["UserEmail"];
+            string password = Request.Form["UserPassword"];
+
+            System.Diagnostics.Debug.WriteLine(username);
+            System.Diagnostics.Debug.WriteLine(useremail);
+            System.Diagnostics.Debug.WriteLine(password);
+
+            if (username == null || username == "" || useremail == null || useremail == "" || password == null || password == "") {
+                return RedirectToAction("Register");
+            }
+            Book_Reading_Event_DAO.User usr = new Book_Reading_Event_DAO.User();
+            usr.UserName = username;
+            usr.UserEmail = useremail;
+            usr.UserPassword = password;
+            usr.UserRole = "U";
+
+            bool result = uo.addUser(usr);
+            if (result) {
+                return RedirectToAction("Login");
+            } else {
+                return RedirectToAction("Register");
+            }
+        }
+
         public ActionResult Home() {
             var test = cf.CheckLoginUser();
             if (!test) {
