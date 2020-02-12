@@ -62,6 +62,9 @@
         <td>
             @Html.DisplayFor(modelItem => item.EventStartTime)
         </td>
+        <td>
+            @Html.ActionLink("View Event Details", "ViewPublicDetail", new { id = item.EventId })
+        </td>
     </tr>
 }
 
