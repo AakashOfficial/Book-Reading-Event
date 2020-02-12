@@ -27,5 +27,10 @@ namespace Book_Reading_UI.Areas.Admin.Controllers {
             var output = userOperation.getUserData();
             return View(output);
         }
+
+        public ActionResult AllEvents() {
+            var output = eventOperations.getEvents();
+            return View();
+        }
     }
 }
