@@ -1,16 +1,30 @@
-﻿using System;
+﻿using Book_Reading_Event_BL;
+using Book_Reading_Event_DAO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Book_Reading_UI.Areas.Admin.Controllers
-{
-    public class AdminController : Controller
-    {
+namespace Book_Reading_UI.Areas.Admin.Controllers {
+
+    public class AdminController : Controller {
+
+        private UserOperation userOperation;
+        private EventOperations eventOperations;
+
+        public AdminController() {
+            userOperation = new UserOperation();
+            eventOperations = new EventOperations();
+        }
+
         // GET: Admin/Admin
-        public ActionResult Index()
-        {
+        public ActionResult Index() {
+            return View();
+        }
+
+        public ActionResult AllUsers() {
+
             return View();
         }
     }
