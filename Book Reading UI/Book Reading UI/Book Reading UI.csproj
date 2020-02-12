@@ -120,6 +120,7 @@
     <Content Include="Areas\Admin\Views\Admin\AllUsers.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\AllEvents.cshtml" />
     <Content Include="Areas\User\Views\Events\Invitations.cshtml" />
+    <Content Include="Areas\User\Views\Events\Invite.cshtml" />
     <None Include="Content\bootstrap.cssss" />
     <None Include="Content\bootstrap.min.cssss" />
     <Content Include="Scripts\esm\popper-utils.js" />
