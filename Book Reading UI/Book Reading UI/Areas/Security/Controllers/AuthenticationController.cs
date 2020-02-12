@@ -14,10 +14,12 @@ namespace Book_Reading_UI.Areas.Security.Controllers {
 
         private UserOperation uo;
         private CreatedFunction cf;
+        private EventOperations eventOperations;
 
         public AuthenticationController(){
             uo = new UserOperation();
             cf = new CreatedFunction();
+            eventOperations = new EventOperations();
         }
 
         // GET: Security/Authentication
@@ -85,8 +87,9 @@ namespace Book_Reading_UI.Areas.Security.Controllers {
             if (!test) {
                 return Redirect("/Security/Authentication/Login");
             }
+            var output = eventOperations.getPublicEvent();
 
-            return View();
+            return View(output);
         }
 
         public ActionResult Logout() {
