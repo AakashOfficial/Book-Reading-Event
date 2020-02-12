@@ -4,7 +4,7 @@
     ViewBag.Title = "Login";
 }
 
-@* <style type="text/css">
+<style type="text/css">
         .login-dark {
             background: linear-gradient(145deg, #575b5d, #252b2d);
         }
@@ -14,69 +14,76 @@
         }
     </style>
 
-        <div class="row m-4">
-            <div class="col-4">
-                <div class="login-dark p-3 shadow-lg rounded">
-                    <div class="pt-3">
-                        <h2 class="text-white ">Sign In | Dark</h2>
-                    </div>
-                    <form class="mt-5">
-                        <div class="form-group">
-                            <input type="email" class="form-control form-control-sm bg-light" placeholder="Email Id">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control form-control-sm bg-light" placeholder="Password">
-                        </div>
+<div style="margin-top:30px;"></div>
 
-                        <div class="mt-5">
-                            <button class="btn btn-sm btn-light col">
-                                Login
-                            </button>
-                        </div>
+<div class="col-4">
+    <h2 style="text-align:center">Login </h2>
+</div>
 
-
-                        <div class="mt-5">
-                            <p class="text-white text-center">
-                                <a href="/Security/Authentication/Register" class="text-warning">Click here to register</a>
-                            </p>
-                        </div>
-                    </form>
+    <div class="row m-4">
+        <div class="col-4">
+            <div class="login-dark p-3 shadow-lg rounded">
+                <div class="pt-3">
+                    <h2 class="text-white ">Sign In</h2>
                 </div>
-            </div>
-        </div> *@
+                <form class="mt-5" action="/Security/Authentication/Validate" method="post">
+                    <div class="form-group">
+                        <input type="email" class="form-control form-control-sm bg-light" placeholder="Email Id" name="UserEmail">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control form-control-sm bg-light" placeholder="Password" name="UserPassword">
+                    </div>
+
+                    <div class="mt-5">
+                        <button class="btn btn-sm btn-light col">
+                            Login
+                        </button>
+                    </div>
 
 
-<h2>Login </h2>
-
-@using (Html.BeginForm("Validate", "Authentication", FormMethod.Post))
-{
-    @Html.AntiForgeryToken()
-
-    <div class="form-horizontal">
-        <h4>User</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.UserEmail, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.UserEmail, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.UserEmail, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.UserPassword, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.UserPassword, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.UserPassword, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Login" class="btn btn-default" />
+                    <div class="mt-5">
+                        <p class="text-white text-center">
+                            <a href="/Security/Authentication/Register" class="text-warning">Click here to Register</a>
+                        </p>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-}
+
+    @*
+        <h2>Login </h2>
+
+        @using (Html.BeginForm("Validate", "Authentication", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <h4>User</h4>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.UserEmail, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.UserEmail, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.UserEmail, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.UserPassword, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.UserPassword, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.UserPassword, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Login" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        }
+    *@
