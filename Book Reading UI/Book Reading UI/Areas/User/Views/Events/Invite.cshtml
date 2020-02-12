@@ -22,7 +22,14 @@
         <input type="hidden" name="eventId" value="@ViewBag.eventId"/>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                @Html.DropDownList("userId", ViewBag.userlist as SelectList)
+                @* @Html.DropDownList("userId", ViewBag.userlist as SelectList) *@
+                <select name="userId" multiple>
+                    @for (int i = 0; i < ViewBag.userlist.Length; i=i+2)
+                    {
+                    <option value="@ViewBag.userlist[i]">@ViewBag.userlist[i+1]</option>
+                    }
+                </select>
+               
             </div>
         </div>
 

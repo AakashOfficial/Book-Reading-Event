@@ -31,12 +31,15 @@ namespace Book_Reading_Event_DAO {
 
         // Function To List all user Id and Name
         public string[] UserIds() {
-            string[] listUser = null ;
+            
             var output = db.user.ToList();
-
+            string[] listUser = new string[2*output.Count];
+            var i = 0;
             foreach (var user in output) {
                 // System.Diagnostics.Debug.WriteLine(user.UserName);
-                listUser[user.UserId] = user.UserName;
+                listUser[i] = ""+user.UserId;
+                listUser[i+1] = user.UserName;
+                i=i+2;
             }
             return listUser;
         }
