@@ -50,6 +50,19 @@ namespace Book_Reading_Test.Controllers {
             // Assert
             Assert.AreEqual(viewName, result.ViewName);
         }
-        
+
+        [TestMethod]
+        public void UpcomingEvents() {
+            // Arrange
+            EventsController controller = new EventsController();
+            string viewName = "UpcomingEvents";
+
+            // Act
+            ViewResult result = controller.Index() as ViewResult;
+
+            // Assert
+            Assert.AreEqual(viewName, result.ViewName);
+        }
+
     }
 }
