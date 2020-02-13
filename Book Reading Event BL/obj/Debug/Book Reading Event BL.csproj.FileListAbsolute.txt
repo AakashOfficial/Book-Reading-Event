@@ -1,18 +1,3 @@
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\bin\Debug\Book Reading Event BL.dll
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\bin\Debug\Book Reading Event BL.pdb
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\obj\Debug\Book Reading Event BL.csprojAssemblyReference.cache
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\obj\Debug\Book Reading Event BL.csproj.CoreCompileInputs.cache
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\obj\Debug\Book Reading Event BL.dll
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\obj\Debug\Book Reading Event BL.pdb
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\bin\Debug\Book Reading Event DAO.dll
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\bin\Debug\Book Reading Event DAO.pdb
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\obj\Debug\Book Reading Event BL.csproj.CopyComplete
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\bin\Debug\EntityFramework.dll
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\bin\Debug\Book Reading Event DAO.dll.config
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\bin\Debug\EntityFramework.xml
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\bin\Debug\Book Reading Event BL.dll.config
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\bin\Debug\EntityFramework.SqlServer.dll
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event BL\bin\Debug\EntityFramework.SqlServer.xml
 D:\Learning\Projects\C#\Book Reading Event\New folder\Book-Reading-Event\Book Reading Event BL\bin\Debug\Book Reading Event BL.dll.config
 D:\Learning\Projects\C#\Book Reading Event\New folder\Book-Reading-Event\Book Reading Event BL\bin\Debug\Book Reading Event BL.dll
 D:\Learning\Projects\C#\Book Reading Event\New folder\Book-Reading-Event\Book Reading Event BL\bin\Debug\Book Reading Event BL.pdb
