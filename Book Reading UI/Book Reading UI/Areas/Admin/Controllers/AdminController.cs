@@ -34,7 +34,6 @@ namespace Book_Reading_UI.Areas.Admin.Controllers {
             } else {
                 return Redirect("/Security/Authentication/Home");
             }
-            
         }
 
         public ActionResult AllEvents() {
@@ -43,8 +42,14 @@ namespace Book_Reading_UI.Areas.Admin.Controllers {
                 return Redirect("/Security/Authentication/Login");
             }
 
-            var output = eventOperations.getEvents();
-            return View(output);
+            string userRole = cf.GetUserRole(cf.LoggedUserId());
+
+            if (userRole == "A") {
+                var output = eventOperations.getEvents();
+                return View(output);
+            } else {
+                return Redirect("/Security/Authentication/Home");
+            }
         }
     }
 }
