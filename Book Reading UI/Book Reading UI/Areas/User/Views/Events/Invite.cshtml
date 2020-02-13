@@ -18,7 +18,7 @@
             @Html.DisplayFor(model => model.EventName)
         </dd>
     </dl>
-    <form>
+    <form action="/User/Events/InviteUser" method="post">
         <input type="hidden" name="eventId" value="@ViewBag.eventId"/>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
