@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace Book_Reading_Test.Controllers {
 
@@ -32,7 +33,7 @@ namespace Book_Reading_Test.Controllers {
             string viewName = "ViewMyEvent";
 
             // Act
-            ViewResult result = controller.Index() as ViewResult;
+            ViewResult result = controller.ViewMyEvent() as ViewResult;
 
             // Assert
             Assert.AreEqual(viewName, result.ViewName);
