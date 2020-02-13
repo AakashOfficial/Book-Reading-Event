@@ -27,4 +27,3 @@ D:\Learning\Projects\C#\Book Reading Event\New folder\Book-Reading-Event\Book Re
 D:\Learning\Projects\C#\Book Reading Event\New folder\Book-Reading-Event\Book Reading Event DAO\obj\Debug\Book Reading Event DAO.csproj.CopyComplete
 D:\Learning\Projects\C#\Book Reading Event\New folder\Book-Reading-Event\Book Reading Event DAO\obj\Debug\Book Reading Event DAO.dll
 D:\Learning\Projects\C#\Book Reading Event\New folder\Book-Reading-Event\Book Reading Event DAO\obj\Debug\Book Reading Event DAO.pdb
-D:\Learning\Projects\C#\Book Reading Event\Book Reading Event DAO\obj\Debug\Book Reading Event DAO.csprojAssemblyReference.cache
