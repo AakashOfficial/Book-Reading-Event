@@ -26,8 +26,7 @@ namespace Book_Reading_Test.Controllers {
         }
 
         [TestMethod]
-        public void ViewMyEvent()
-        {
+        public void ViewMyEvent() {
             // Arrange
             EventsController controller = new EventsController();
             string viewName = "ViewMyEvent";
@@ -38,5 +37,19 @@ namespace Book_Reading_Test.Controllers {
             // Assert
             Assert.AreEqual(viewName, result.ViewName);
         }
+
+        [TestMethod]
+        public void PublicEvents() {
+            // Arrange
+            EventsController controller = new EventsController();
+            string viewName = "PublicEvents";
+
+            // Act
+            ViewResult result = controller.Index() as ViewResult;
+
+            // Assert
+            Assert.AreEqual(viewName, result.ViewName);
+        }
+        
     }
 }
