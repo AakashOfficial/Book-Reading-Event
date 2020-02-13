@@ -77,5 +77,17 @@ namespace Book_Reading_Test.Controllers {
             Assert.AreEqual(viewName, result.ViewName);
         }
 
+        [TestMethod]
+        public void Invitations() {
+            // Arrange
+            EventsController controller = new EventsController();
+            string viewName = "Invitations";
+
+            // Act
+            ViewResult result = controller.Index() as ViewResult;
+
+            // Assert
+            Assert.AreEqual(viewName, result.ViewName);
+        }
     }
 }
