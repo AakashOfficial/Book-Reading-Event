@@ -32,7 +32,7 @@ namespace Book_Reading_Test.Controllers {
             string viewName = "AllEvents";
 
             // Act
-            ViewResult result = controller.Index() as ViewResult;
+            ViewResult result = controller.AllEvents() as ViewResult;
 
             // Assert
             Assert.AreEqual(viewName, result.ViewName);
