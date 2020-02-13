@@ -80,25 +80,6 @@ namespace Book_Reading_Event_BL {
             return output;
         }
 
-        // Function To Invite the User
-        public bool inviteUser(int eventId,int[] userId ) {
-            if (eventId == 0) {
-                return false;
-            }
-
-            Invitation invitation = new Invitation();
-
-            for (int i = 0; i < userId.Length; i++) {
-                invitation.EventId = eventId;
-                invitation.UserId = userId[i];
-                invitation.InvitationActive = 1;
-
-                db.invitation.Add(invitation);
-                db.SaveChanges();
-            }
-            return true;
-        }
-
         // Function To Find All Public Events
         public IEnumerable<Event> getPublicEvent() {
             var output = getEvents().Where(d => d.EventType == 2);
