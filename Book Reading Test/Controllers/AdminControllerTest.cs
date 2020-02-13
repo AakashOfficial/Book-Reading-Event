@@ -13,8 +13,7 @@ namespace Book_Reading_Test.Controllers {
     public class AdminControllerTest {
 
         [TestMethod]
-        public void AllUsers()
-        {
+        public void AllUsers() {
             // Arrange
             AdminController controller = new AdminController();
             string viewName = "AllUsers";
@@ -26,5 +25,17 @@ namespace Book_Reading_Test.Controllers {
             Assert.AreEqual(viewName, result.ViewName);
         }
 
+        [TestMethod]
+        public void AllEvents() {
+            // Arrange
+            AdminController controller = new AdminController();
+            string viewName = "AllEvents";
+
+            // Act
+            ViewResult result = controller.Index() as ViewResult;
+
+            // Assert
+            Assert.AreEqual(viewName, result.ViewName);
+        }
     }
 }
