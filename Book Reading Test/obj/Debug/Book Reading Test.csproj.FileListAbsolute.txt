@@ -1,0 +1,2 @@
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\obj\Debug\Book Reading Test.csprojAssemblyReference.cache
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\obj\Debug\Book Reading Test.csproj.CoreCompileInputs.cache
