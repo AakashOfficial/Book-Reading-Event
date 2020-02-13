@@ -85,10 +85,15 @@ namespace Book_Reading_UI.Areas.User.Controllers {
 
         // Function To Invite Registered User
         public ActionResult InviteUser() {
-            string userName = Request.Form["eventid"];
-            string password = Request.Form["txtPassword"];
+            string userId = Request.Form["userId"];
+            string eventId = Request.Form["eventId"];
+            char[] spearator = { ',', ' ' };
+            string[] userIds = userId.Split(spearator, StringSplitOptions.RemoveEmptyEntries);
+            System.Diagnostics.Debug.WriteLine(userId.Length);
+            System.Diagnostics.Debug.WriteLine(userId);
 
-            return View();
+            invitationOperations.inviteUser(Int32.Parse(eventId), Array.ConvertAll(userIds, int.Parse));
+            return Redirect("/User/Events/ViewMyEvent");
         }
 
         // Function To Event Created By User
