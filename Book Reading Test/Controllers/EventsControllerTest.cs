@@ -72,7 +72,7 @@ namespace Book_Reading_Test.Controllers {
             string viewName = "PastEvents";
 
             // Act
-            ViewResult result = controller.Index() as ViewResult;
+            ViewResult result = controller.PastEvents() as ViewResult;
 
             // Assert
             Assert.AreEqual(viewName, result.ViewName);
