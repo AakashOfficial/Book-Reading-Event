@@ -1,6 +1,4 @@
-﻿
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -29,21 +27,34 @@
                     <li class="active">@Html.ActionLink("Home", "Home", new { controller = "Authentication", area = "Security" })</li>
                     <li>@Html.ActionLink("Create Event", "Index", new { Controller = "Events", Area = "User" })</li>
                     <li>@Html.ActionLink("View My Events", "ViewMyEvent", new { Controller = "Events", Area = "User" })</li>
-                    <li>@Html.ActionLink("Logout", "Logout", new { Controller = "Authentication", Area = "Security" })</li>
+                    <li>@Html.ActionLink("View Invitations", "Invitations", new { Controller = "Events", Area = "User" })</li>
                 } else {
                     <li class="active">@Html.ActionLink("Home", "Index", new { controller = "Home", area = "common" })</li>
-                    <li>@Html.ActionLink("Register", "Register", new { Controller = "Authentication", Area = "Security" })</li>
-                    <li>@Html.ActionLink("Login", "Login", new { Controller = "Authentication", Area = "Security" })</li>
                 }
             }
 
             <li>@Html.ActionLink("Public Events", "PublicEvents", new { Controller = "Events", Area = "User" })</li>
             <li>@Html.ActionLink("Upcoming Events", "UpcomingEvents", new { Controller = "Events", Area = "User" })</li>
             <li>@Html.ActionLink("Past Events", "PastEvents", new { Controller = "Events", Area = "User" })</li>
-            
-            <li>@Html.ActionLink("View Users", "AllUsers", new { Controller = "Admin", Area = "Admin" })</li>
-            <li>@Html.ActionLink("View All Events", "AllEvents", new { Controller = "Admin", Area = "Admin" })</li>
-            <li>@Html.ActionLink("View Invitations", "Invitations", new { Controller = "Events", Area = "User" })</li>
+
+            @{
+                if (userlogeedin) {
+                    int userId = testuser.LoggedUserId();
+                    string userRole = testuser.GetUserRole(userId);
+                    if (userRole == "A") {
+                        <li>@Html.ActionLink("View Users", "AllUsers", new { Controller = "Admin", Area = "Admin" })</li>
+                        <li>@Html.ActionLink("View All Events", "AllEvents", new { Controller = "Admin", Area = "Admin" })</li>
+                    }
+                }
+            }
+            @{
+                if (userlogeedin) {
+                    <li>@Html.ActionLink("Logout", "Logout", new { Controller = "Authentication", Area = "Security" })</li>
+                } else {
+                    <li>@Html.ActionLink("Login", "Login", new { Controller = "Authentication", Area = "Security" })</li>
+                    <li>@Html.ActionLink("Register", "Register", new { Controller = "Authentication", Area = "Security" })</li>
+                }
+            }
         </ul>
 
         @* <div class="navbar navbar-inverse navbar-fixed-top">
