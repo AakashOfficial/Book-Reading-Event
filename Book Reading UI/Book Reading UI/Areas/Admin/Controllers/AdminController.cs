@@ -32,6 +32,11 @@ namespace Book_Reading_UI.Areas.Admin.Controllers {
         }
 
         public ActionResult AllEvents() {
+            var test = cf.CheckLoginUser();
+            if (!test) {
+                return Redirect("/Security/Authentication/Login");
+            }
+
             var output = eventOperations.getEvents();
             return View(output);
         }
