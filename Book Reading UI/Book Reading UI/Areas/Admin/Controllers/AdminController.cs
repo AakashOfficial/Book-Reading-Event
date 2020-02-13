@@ -18,11 +18,6 @@ namespace Book_Reading_UI.Areas.Admin.Controllers {
             eventOperations = new EventOperations();
         }
 
-        // GET: Admin/Admin
-        public ActionResult Index() {
-            return View();
-        }
-
         public ActionResult AllUsers() {
             var output = userOperation.getUserData();
             return View(output);
