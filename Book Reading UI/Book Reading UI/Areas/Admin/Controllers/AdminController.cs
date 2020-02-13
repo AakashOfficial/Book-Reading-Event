@@ -26,9 +26,15 @@ namespace Book_Reading_UI.Areas.Admin.Controllers {
             if (!test) {
                 return Redirect("/Security/Authentication/Login");
             }
+            string userRole = cf.GetUserRole(cf.LoggedUserId());
 
-            var output = userOperation.getUserData();
-            return View(output);
+            if (userRole == "A") {
+                var output = userOperation.getUserData();
+                return View(output);
+            } else {
+                return Redirect("/Security/Authentication/Home");
+            }
+            
         }
 
         public ActionResult AllEvents() {
