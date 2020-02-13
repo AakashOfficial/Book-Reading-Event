@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Book_Reading_UI.Areas.Common.Controllers;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,15 @@ namespace Book_Reading_Test.Controllers {
 
         [TestMethod]
         public void Index() {
+            // Arrange
+            HomeController controller = new HomeController();
+            string viewName = "Index";
 
+            // Act
+            ViewResult result = controller.Index() as ViewResult;
+
+            // Assert
+            Assert.AreEqual(viewName, result.ViewName);
         }
-
     }
 }
