@@ -46,7 +46,7 @@ namespace Book_Reading_Test.Controllers {
             string viewName = "PublicEvents";
 
             // Act
-            ViewResult result = controller.Index() as ViewResult;
+            ViewResult result = controller.PublicEvents() as ViewResult;
 
             // Assert
             Assert.AreEqual(viewName, result.ViewName);
