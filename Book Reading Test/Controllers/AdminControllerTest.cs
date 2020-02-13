@@ -26,6 +26,5 @@ namespace Book_Reading_Test.Controllers {
             Assert.AreEqual(viewName, result.ViewName);
         }
 
-
     }
 }
