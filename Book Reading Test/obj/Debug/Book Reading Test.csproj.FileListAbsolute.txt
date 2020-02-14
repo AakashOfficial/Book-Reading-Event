@@ -1,2 +1,38 @@
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\obj\Debug\Book Reading Test.csprojAssemblyReference.cache
 D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\obj\Debug\Book Reading Test.csproj.CoreCompileInputs.cache
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Book Reading Test.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Book Reading Test.pdb
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Book Reading UI.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\System.Web.Helpers.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\System.Web.Mvc.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\System.Web.Razor.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\System.Web.WebPages.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Book Reading Event BL.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Book Reading Event DAO.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\EntityFramework.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Book Reading UI.pdb
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Book Reading UI.dll.config
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\System.Web.Helpers.xml
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\System.Web.Mvc.xml
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\System.Web.Razor.xml
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\System.Web.WebPages.xml
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Book Reading Event BL.pdb
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Book Reading Event BL.dll.config
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Book Reading Event DAO.pdb
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\Book Reading Event DAO.dll.config
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\bin\Debug\EntityFramework.xml
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\obj\Debug\Book Reading Test.csproj.CopyComplete
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\obj\Debug\Book Reading Test.dll
+D:\Learning\Projects\C#\Book Reading Event\Book Reading Test\obj\Debug\Book Reading Test.pdb
