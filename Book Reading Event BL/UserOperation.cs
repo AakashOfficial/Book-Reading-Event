@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Book_Reading_Event_BL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,9 +31,9 @@ namespace Book_Reading_Event_DAO {
         }
 
         // Function To List all user Id and Name
-        public string[] UserIds() {
+        public string[] UserIds(int userId) {
             
-            var output = db.user.ToList();
+            var output = db.user.Where(d => d.UserId != userId).ToList();
             string[] listUser = new string[2*output.Count];
             var i = 0;
             foreach (var user in output) {
@@ -73,6 +74,12 @@ namespace Book_Reading_Event_DAO {
         public IEnumerable<User> getUserData() {
             var output = db.user.ToList().Where(d => d.UserRole == "U");
             return output;
+        }
+
+        // Function To get the Invited User
+        public void alreadyInvited(int eventId) {
+            InvitationOperations inv = new InvitationOperations();
+            var output = db.invitation.ToList().Where(d => d.EventId == eventId);
         }
     }
 }
