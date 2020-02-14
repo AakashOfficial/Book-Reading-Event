@@ -44,7 +44,8 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
+@foreach (var item in Model)
+{
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.User.UserName)
@@ -65,7 +66,13 @@
             @Html.DisplayFor(modelItem => item.EventDuration)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.EventType)
+            @{ var eventType = "Private";
+                if (item.EventType == 2)
+                {
+                    eventType = "Public";
+                }
+            } 
+            @Html.DisplayFor(modelItem => eventType)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.EventDate)
