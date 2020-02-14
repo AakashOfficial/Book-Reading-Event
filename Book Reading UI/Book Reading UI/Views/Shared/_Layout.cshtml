@@ -23,12 +23,15 @@
                 Book_Reading_UI.Controllers.CreatedFunction testuser = new Book_Reading_UI.Controllers.CreatedFunction();
 
                 bool userlogeedin = testuser.CheckLoginUser();
-                if (userlogeedin) {
+                if (userlogeedin)
+                {
                     <li class="active">@Html.ActionLink("Home", "Home", new { controller = "Authentication", area = "Security" })</li>
                     <li>@Html.ActionLink("Create Event", "Index", new { Controller = "Events", Area = "User" })</li>
                     <li>@Html.ActionLink("View My Events", "ViewMyEvent", new { Controller = "Events", Area = "User" })</li>
                     <li>@Html.ActionLink("View Invitations", "Invitations", new { Controller = "Events", Area = "User" })</li>
-                } else {
+                }
+                else
+                {
                     <li class="active">@Html.ActionLink("Home", "Index", new { controller = "Home", area = "common" })</li>
                 }
             }
@@ -38,23 +41,29 @@
             <li>@Html.ActionLink("Past Events", "PastEvents", new { Controller = "Events", Area = "User" })</li>
 
             @{
-                if (userlogeedin) {
+                if (userlogeedin)
+                {
                     int userId = testuser.LoggedUserId();
                     string userRole = testuser.GetUserRole(userId);
-                    if (userRole == "A") {
+                    if (userRole == "A")
+                    {
                         <li>@Html.ActionLink("View Users", "AllUsers", new { Controller = "Admin", Area = "Admin" })</li>
                         <li>@Html.ActionLink("View All Events", "AllEvents", new { Controller = "Admin", Area = "Admin" })</li>
                     }
                 }
             }
             @{
-                if (userlogeedin) {
+                if (userlogeedin)
+                {
                     <li>@Html.ActionLink("Logout", "Logout", new { Controller = "Authentication", Area = "Security" })</li>
-                } else {
+                }
+                else
+                {
                     <li>@Html.ActionLink("Login", "Login", new { Controller = "Authentication", Area = "Security" })</li>
                     <li>@Html.ActionLink("Register", "Register", new { Controller = "Authentication", Area = "Security" })</li>
                 }
             }
+            <li><a href="http://helpdesk.nagarro.com/">Customer Support</a></li>
         </ul>
 
         @* <div class="navbar navbar-inverse navbar-fixed-top">
