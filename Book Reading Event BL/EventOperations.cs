@@ -63,6 +63,13 @@ namespace Book_Reading_Event_BL {
 
             db.events.Remove(output);
             db.SaveChanges();
+
+            InvitationOperations inv = new InvitationOperations();
+            var outputs = db.invitation.Where(d => d.EventId == id);
+            foreach (var x in outputs) {
+                db.invitation.Remove(x);
+            }
+            
             return true;
         }
 
