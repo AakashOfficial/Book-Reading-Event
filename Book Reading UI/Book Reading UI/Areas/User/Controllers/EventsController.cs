@@ -77,9 +77,13 @@ namespace Book_Reading_UI.Areas.User.Controllers {
 
         // Function TO View Invitation Form
         public ActionResult Invite(int id) {
+            var test = cf.CheckLoginUser();
+            if (!test) {
+                return Redirect("/Security/Authentication/Login");
+            }
             var output = evop.getEventDetails(id);
             ViewBag.eventId = id;
-            ViewBag.userlist = userOperation.UserIds();
+            ViewBag.userlist = userOperation.UserIds(cf.LoggedUserId());
             return View(output);
         }
 
