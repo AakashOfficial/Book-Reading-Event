@@ -1,3 +1,5 @@
 # Book Reading Event
 
-Written in C#
+Book Reading Event Application for Creating Events fr Book Reading.
+
+It is written in C#.
